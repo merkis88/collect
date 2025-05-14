@@ -80,4 +80,18 @@ class Collect
         array_splice($idx, $length);
         return $this;
     }
+
+
+    public function contains ($value): bool
+    {
+        return in_array($value, $this->array);
+    }
+
+    public function clear(): self
+    {
+        $this->array = [];
+        return $this;
+    }
+
+
 }
