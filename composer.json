@@ -1,7 +1,7 @@
 {
-    "name": "merkis88/collectt",
-    "description": "collect",
-    "type": "project",
+    "name": "merkis88/collect",
+    "description": "Custom collection class for working with arrays",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -9,8 +9,15 @@
             "email": "axuenno88@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Collect\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
     "require": {
-        "merkis88/collect": "dev-main"
+        "php": "^7.4 || ^8.0"
     }
 }
